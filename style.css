@@ -47,13 +47,13 @@
   left: 210px;
 }
 .game__player--color--red {
-  background-color: red;
+  background-color: #f00;
 }
 .game__player--color--green {
-  background-color: green;
+  background-color: #080;
 }
 .game__player--color--blue {
-  background-color: blue;
+  background-color: #00f;
 }
 
 /*# sourceMappingURL=style.css.map */
