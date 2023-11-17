@@ -1,59 +1,21 @@
-.game {
-  position: relative;
-  width: 300px;
-  border: 2px solid #000;
-}
-.game__field {
-  display: flex;
-  flex-wrap: wrap;
-}
-.game__ceil {
-  box-sizing: border-box;
-  height: 100px;
-  width: 100px;
-  border: 1px dashed #000;
-}
-.game__player {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  height: 80px;
-  width: 80px;
-  background-color: #000;
-  border-radius: 50%;
-}
-.game__player--y--1 {
-  top: 10px;
-}
-.game__player--y--2 {
-  top: 110px;
-}
-.game__player--y--3 {
-  top: 210px;
-}
-.game__player--y--4 {
-  top: 310px;
-}
-.game__player--y--5 {
-  top: 410px;
-}
-.game__player--x--1 {
-  left: 10px;
-}
-.game__player--x--2 {
-  left: 110px;
-}
-.game__player--x--3 {
-  left: 210px;
-}
-.game__player--color--red {
-  background-color: #f00;
-}
-.game__player--color--green {
-  background-color: #080;
-}
-.game__player--color--blue {
-  background-color: #00f;
-}
+/* Error: Missing argument $size.
+ *     ,
+ * 34  |         @function currentShift($position, $size, $base-shift) {
+ *     |                   =========================================== declaration
+ * ... |
+ * 46  |                 left: currentShift($column - 1) * $cell-size + $shift;
+ *     |                       ^^^^^^^^^^^^^^^^^^^^^^^^^ invocation
+ *     '
+ *   style.scss 46:23  currentShift()
+ *   style.scss 46:23  root stylesheet */
 
-/*# sourceMappingURL=style.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Missing argument $size.\a     \2577 \a 34  \2502          @function currentShift($position, $size, $base-shift) {\d\a     \2502                    \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a... \2502 \a 46  \2502                  left: currentShift($column - 1) * $cell-size + $shift;\d\a     \2502                        ^^^^^^^^^^^^^^^^^^^^^^^^^ invocation\a     \2575 \a   style.scss 46:23  currentShift()\a   style.scss 46:23  root stylesheet";
+}
