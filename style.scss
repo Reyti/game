@@ -31,19 +31,26 @@ $row-count: 5;
         background-color: #000;
         border-radius: 50%;
 
+        @function currentShift($position, $size, $base-shift) {
+            @return ($position - 1) * $size + $base-shift;
+        }
+
         @for $row from 1 through $row-count {
             &--y--#{$row} {
-                top: ($row - 1) * $cell-size + $shift;
+                top: currentShift($row, $cell-size, $shift)
             }
         }
 
         @for $column from 1 through $col-count {
             &--x--#{$column} {
-                left: ($column - 1) * $cell-size + $shift;
+                left: currentShift($column - 1) * $cell-size + $shift;
             }
         }
 
-        $colors: red #f00, green #080, blue #00f;
+        $colors: 
+          red #f00,
+          green #080,
+          blue #00f;
 
         @each $name, $color in $colors {
             &--color--#{$name} {
